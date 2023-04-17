@@ -31,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
         sbPercent.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
-                int percent = progress;
-                tvPercent.setText(String.valueOf(percent) + "%");
+                tvPercent.setText(Integer.toString(progress));
                 calculate();
 
             }
