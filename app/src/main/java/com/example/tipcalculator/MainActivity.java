@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         sbPercent.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
+                //local variable percent is redundant and String.valueOf() is not needed
                 int percent = progress;
                 tvPercent.setText(String.valueOf(percent) + "%");
                 calculate();
